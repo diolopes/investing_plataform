@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="390.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CompanyFormController">
+   <children>
+      <GridPane layoutX="23.0" prefHeight="377.0" prefWidth="775.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="234.00000508626303" minWidth="10.0" prefWidth="159.3333536783854" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="227.33337402343747" minWidth="10.0" prefWidth="203.99997965494788" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="227.33337402343747" minWidth="10.0" prefWidth="65.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="375.33331298828125" minWidth="10.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="53.333353678385436" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="52.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.666656494140625" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.66664123535159" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtEmail" prefWidth="150.0" promptText="Enter your bussiness email" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <Label text=" Mobile" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <ChoiceBox fx:id="choiceboxGrossSales" prefHeight="25.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin></ChoiceBox>
+            <TextField fx:id="txtWebsite" promptText="Company Website" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtCountryMobileCode" prefHeight="25.0" prefWidth="56.0" promptText="Ex: +351" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="25.0" left="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <DatePicker fx:id="datepickerFoundationDate" prefHeight="25.0" prefWidth="183.0" promptText="Company Foundation Date" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="25.0" />
+               </GridPane.margin></DatePicker>
+            <TextField fx:id="txtCeoName" prefWidth="150.0" promptText="Ceo Name" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtMobile" prefHeight="25.0" prefWidth="147.0" promptText="Mobile Number" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="25.0" left="70.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="17.0" prefWidth="331.0" text="Upload a file that proves the Company and CEO's name" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin></Label>
+            <Label prefHeight="17.0" prefWidth="189.0" text="Upload a photo of your ID or passport " wrapText="true" GridPane.columnIndex="3">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="276.0" text="Upload a file that proves your foundation date info" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="28.0" prefWidth="269.0" text="Upload a file that show your last year's Gross Sales" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin></Label>
+            <ComboBox fx:id="comboboxCountry" prefHeight="25.0" prefWidth="150.0" promptText="Select your Country" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="25.0" />
+               </GridPane.margin></ComboBox>
+            <ComboBox fx:id="comboboxIndustry" prefHeight="25.0" prefWidth="205.0" promptText="Select your Company Industry" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="25.0" />
+               </GridPane.margin></ComboBox>
+            <TextField fx:id="txtCompanyName" prefHeight="25.0" prefWidth="150.0" promptText="Company Name">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtPassword" promptText="Enter your password" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtConfirmationEmail" prefWidth="150.0" promptText="Confirm your email" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="txtConfirmationPassword" prefWidth="150.0" promptText="Confirm your password" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></TextField>
+            <Button fx:id="btUploadCompanyName" mnemonicParsing="false" onAction="#onBtUploadCompanyNameAction" text="Upload File" GridPane.columnIndex="2" />
+            <Button fx:id="btUploadCeoName" mnemonicParsing="false" onAction="#onBtUploadCeoNameAction" text="Upload File" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btUploadFoundationDate" mnemonicParsing="false" onAction="#onBtUploadFoundationDateAction" text="Upload File" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="btUploadGrossSales" mnemonicParsing="false" onAction="#onBtUoloadGrossSalesAction" prefHeight="25.0" prefWidth="78.0" text="Upload File" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label prefHeight="45.0" prefWidth="155.0" text="Select the interval of your Gross Sales info of last year" wrapText="true" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="250.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

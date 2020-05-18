@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <VBox prefHeight="245.0" prefWidth="426.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu fx:id="menuWhoWeAre" mnemonicParsing="false" text="Who we are">
+                     <items>
+                        <MenuItem fx:id="menuItemAboutUs" mnemonicParsing="false" onAction="#onmenuItemAboutUsAction" text="About Us" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Login">
+                     <items>
+                        <MenuItem fx:id="menuItemInvestorLogin" mnemonicParsing="false" onAction="#onMenuItemInvestorLoginAction" text="As Investor" />
+                        <MenuItem fx:id="menuItemCompanyLogin" mnemonicParsing="false" onAction="#onMenuItemCompanyLoginAction" text="As Company" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Register">
+                  <items>
+                        <MenuItem fx:id="menuItemInvestorRegister" mnemonicParsing="false" onAction="#onMenuItemInvestorRegisterAction" text="Investor" />
+                        <MenuItem fx:id="menuItemCompanyRegister" mnemonicParsing="false" onAction="#onMenuItemCompanyRegisterAction" text="Company" />
+                  </items>
+                </Menu>
+                <Menu fx:id="menuContactUs" mnemonicParsing="false" text="Support">
+                     <items>
+                        <MenuItem fx:id="menuItemContactUs" mnemonicParsing="false" onAction="#onMenuItemContactUsAction" text="Contact" />
+                     </items></Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
